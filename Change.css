@@ -1,0 +1,70 @@
+#MyNameBorder{
+    background:white;
+    color: darkblue;
+    border: 3px solid;
+    padding: 1px;
+    border-radius: 10px;
+    border-image: auto;
+    font-style: italic;
+    font-size: 30px;
+    height: 150px;
+    width: 500px;
+}
+
+#MyBorder1{
+    background:white;
+    color: darkblue;
+    border: 3px solid;
+    padding: 1px;
+    border-radius: 10px;
+    border-image: auto;
+    font-size: 20px;
+    height: 170px;
+    width: 500px;
+}
+#MyBorder2{
+    background:white;
+    color: darkblue;
+    border: 3px solid;
+    padding: 1px;
+    border-radius: 10px;
+    border-image: auto;
+    font-size: 20px;
+    height: 120px;
+    width: 500px;
+}
+#MyBorder3{
+    background:white;
+    color: darkblue;
+    border: 3px solid;
+    padding: 1px;
+    border-radius: 10px;
+    border-image: auto;
+    font-size: 20px;
+    height: 80px;
+    width: 500px;
+}
+#MyBorder4{
+    background:white;
+    color: darkblue;
+    border: 3px solid;
+    padding: 1px;
+    border-radius: 10px;
+    border-image: auto;
+    font-size: 20px;
+    height: 150px;
+    width: 900px;
+}
+/*There are different MyBorder ID's because I adjust
+  the border according to how large the text is the order is*/
+  
+body{
+    background-image: url(Pics/Blue\ sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 2880px 2000px;
+    object-fit: cover;
+}
+/*Some notes for myself*/
+/*margin:10px 20px eg moves 10px down and 20px right
+you can add more like margin: 10px 10px 10px 10px
+  same rule for padding*/
