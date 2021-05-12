@@ -19,7 +19,7 @@
     border-radius: 10px;
     border-image: auto;
     font-size: 20px;
-    height: 190px;
+    height: 250px;
     width: 500px;
 }
 #MyBorder2{
@@ -30,7 +30,7 @@
     border-radius: 10px;
     border-image: auto;
     font-size: 20px;
-    height: 120px;
+    height: 140px;
     width: 500px;
 }
 #MyBorder3{
@@ -41,7 +41,7 @@
     border-radius: 10px;
     border-image: auto;
     font-size: 20px;
-    height: 80px;
+    height: 60px;
     width: 500px;
 }
 #MyBorder4{
@@ -52,7 +52,7 @@
     border-radius: 10px;
     border-image: auto;
     font-size: 20px;
-    height: 170px;
+    height: 160px;
     width: 900px;
 }
 /*There are different MyBorder ID's because I adjust
