@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, 
+        initial-scale=1.0">
+        <title>Kagiso's Website</title>
+        <link rel="stylesheet" href="edit.css">
+        <!--The 2 links belows are for the font copied directly from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!--This is for using icons-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--This is a link to use Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="infoSet" id="projectHeader"><a href="https://github.com/kaymanthecoder/Machine-Learning-2nd-Project" id="github"><i class="fa fa-github"></i> Machine Learning 2nd Project</a></h1>
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Projects/4. Machine Learning B/Graph.png" alt=""></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+        
+        <section class="projectInfo">
+            <div class="infoSet">
+                <p>
+                    This is an Logistic Regression using Python Machine Learning. 
+                    <br><br>
+                    The aim of Logistic regression is to model the probabilities of a response variable as a function of some explanatory variables. <br>
+                    To perform descriptive discriminative analysis such as describing the difference between individuals in separate groups as a function of explanatory variables. <br>
+                    To predict probabilities that individuals fall into two categories of the binary response as a function of some explanatory variables. <br>
+                    And to classify individuals into two categories based on explanatory variables. 
+                    <br><br>
+                    The diabetes dataset comes with Sklearn, consists of 10 physiological variables (age, sex, weight and blood pressure) measure on 442 patients, and an indication of the disease progression after one year. The goal is to predict disease progression from physiological variables.
+                    <br><br>
+                    This graph shows that the higher the age of a patient the more accurate the test results was.
+                </p>
+            </div>
+        </section>
+
+        <!--Script tag for Swiper, makes the images swipe-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+        <!--This also makes the images swipe-->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // I chose not to include images automatically swiping,
+            // in case the user is still reading the text in the images
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Makes the dots clickable
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>

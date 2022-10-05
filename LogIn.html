@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, 
+        initial-scale=1.0">
+        <title>Kagiso's Website</title>
+        <link rel="stylesheet" href="edit.css">
+        <!--The 2 links belows are for the font copied directly from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!--This is for using icons-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--This is a link to use Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="infoSet" id="projectHeader"><a href="https://github.com/kaymanthecoder/Login-System" id="github"><i class="fa fa-github"></i> Log In App</a></h1>
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Projects/7. Log In/Log In Pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/7. Log In/Java.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/7. Log In/Right Log In.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/7. Log In/Wrong Log In.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+        <section class="projectInfo">
+            <div class="infoSet">
+                <p>
+                    This is a Log in app made with Java. I used Javax Swing to give it a frame and buttons. 
+                    <br><br>
+                    The usernames and passwords are saved in a Hashmap since it can store key value pairs. 
+                    <br><br>
+                    If the user uses the correct username and password they'll be logged in. 
+                    <br><br>
+                    If it is incorect they'll have to try again.
+                    
+                </p>
+            </div>
+        </section>
+        
+        <!--Script tag for Swiper, makes the images swipe-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+        <!--This also makes the images swipe-->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // I chose not to include images automatically swiping,
+            // in case the user is still reading the text in the images
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Makes the dots clickable
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>

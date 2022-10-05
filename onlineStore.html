@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, 
+        initial-scale=1.0">
+        <title>Kagiso's Website</title>
+        <link rel="stylesheet" href="edit.css">
+        <!--The 2 links belows are for the font copied directly from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!--This is for using icons-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--This is a link to use Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="infoSet" id="projectHeader"><a href="https://github.com/kaymanthecoder/Online-Store" id="github"><i class="fa fa-github"></i> Online Store App</a></h1>
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Projects/1. Online Store/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/8a.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/8b.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/12a.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/12b.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/13.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/1. Online Store/14.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+        <section class="projectInfo">
+            <div class="infoSet">
+                <p>
+                    This is an online store. I have created this with Java and connected it with the database MySQL. There are 2 classes Customer and BigBoss which both have different functionalities. I will be using these screenshots to explain how this works.
+                    <br><br>
+                    In the code, I have already saved my MySQL username and password. But I removed them from the code when I uploaded this on Github.
+                    <br><br>
+                    Customer:<br><br>
+                    1) The user can log in or create an account
+                    <br><br>
+                    2) If the user chooses the first option to create an account, they can enter their details.
+                    <br><br>
+                    3) Than it will be saved in MySQL. The program will automatically create an userID. The userID is created randomly. And the program will make sure the userID and username cannot be duplicated.
+                    <br><br>
+                    4) When the account has been created the user can log in. The user can choose to buy something, check purchase history, cancel order they have made, delete the account they created or exit the app.
+                    <br><br>
+                    5) The user can choose a category.
+                    <br><br>
+                    6) The user can choose an item but tying in the ID of the item than select how many they want.
+                    <br><br>
+                    7) The user should choose 'Yes' or 'No'. Choosing 'Yes' will proceed with the purchase. Choose between Premium, Standard or Less Priority delivery. This will cause the quantity of the item to go down, will cause the eWallet to decrease and the business's money to increase.
+                    <br><br>
+                    8) It will be saved in the database.
+                    <br><br>
+                    9) The customer can also check purchase history, cancel order or delete the account.
+                    <br><br>
+                    BigBoss:<br><br>
+                    10) The boss can add, update, delete or view all of the items in the database and how much money the business has.
+                    <br><br>
+                    11) The boss can view list of members.
+                    <br><br>
+                    12) The boss can view list of orders.
+                    <br><br>
+                    13) The boss can view list of canceled orders.
+                    <br><br>
+                    14) And the boss can check how much money the company has. The amount can increase or decreases depending on purchases made or items returned.
+                </p>
+            </div>
+        </section>
+        
+        <!--Script tag for Swiper, makes the images swipe-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+        <!--This also makes the images swipe-->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // I chose not to include images automatically swiping,
+            // in case the user is still reading the text in the images
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Makes the dots clickable
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>

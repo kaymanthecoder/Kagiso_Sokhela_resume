@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, 
+        initial-scale=1.0">
+        <title>Kagiso's Website</title>
+        <link rel="stylesheet" href="edit.css">
+        <!--The 2 links belows are for the font copied directly from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!--This is for using icons-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--This is a link to use Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="infoSet" id="projectHeader"><a href="https://github.com/kaymanthecoder/Machine-Learning-3rd-Project" id="github"><i class="fa fa-github"></i> Machine Learning 3rd Project</a></h1>
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/EG.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/Excel.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/Options.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/Shell.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/1953.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/2008.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/5. Machine Learning C/Both.png" alt=""></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+        <section class="projectInfo">
+            <div class="infoSet">
+                <p>
+                    This is a Unsupervised Clustering using Python Machine Learning.
+                    <br><br>
+                    “Unsupervised Clustering” is a method for interpreting the structure of a dataset. Clustering is a Machine Learning algorithm used in everything from Computer Vision to Bioinformatics.
+                    <br><br>
+                    Here is an example of a dataset that was made up of a large number of data points. When performing Unsupervised Clustering, we seek to assign each point of data to a cluster, learning where the clusters are, and which data points belong to which clusters.
+                    <br><br>
+                    The two variables we have measured are Birth Rate (the number of children born per 1000 people each year), and Life Expectancy (how long someone lives on average after being born). Measuring these two variables let each country be placed on a two-dimensional plane, creating a graph known as a “scatter plot” 
+                    <br><br>
+                    The “k-means” clustering ​algorithm is used. This groups up all of the points to the nearest cluster. Instead of having sevearal points scattered all over the graph, they are colour coded with other points which are in the same group.
+                    <br><br>
+                    I used the points on Microsoft Excel to make the graphs. There are 3 graphs: 1953, 2008 and both.
+                    <br><br>
+                    This shows the points of the diagram on Python.
+                    <br><br>
+                    You have 3 options to choose which graph to view.
+                    <br><br>
+                    By looking at these graphs you can see the life expentancy is increasing and the birth rate slowly increasing as well.
+                </p>
+            </div>
+        </section>
+        
+        <!--Script tag for Swiper, makes the images swipe-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+        <!--This also makes the images swipe-->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // I chose not to include images automatically swiping,
+            // in case the user is still reading the text in the images
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Makes the dots clickable
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>

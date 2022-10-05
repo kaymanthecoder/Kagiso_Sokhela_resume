@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, 
+        initial-scale=1.0">
+        <title>Kagiso's Website</title>
+        <link rel="stylesheet" href="edit.css">
+        <!--The 2 links belows are for the font copied directly from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <!--This is for using icons-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--This is a link to use Swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="infoSet" id="projectHeader"><a href="https://github.com/kaymanthecoder/Machine-Learning-1st-Project" id="github"><i class="fa fa-github"></i> Machine Learning 1st Project</a></h1>
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Task.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 1.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 2.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 3.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 4.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 5.png" alt=""></div>
+                <div class="swiper-slide"><img src="Projects/3. Machine Learning A/Graph 6.png" alt=""></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+        <section class="projectInfo">
+            <div class="infoSet">
+                <p>
+                    This is an iris dataset in pattern recognition using Scikit Learn using Python Machine Learning. The goal is to predict the class of the iris plant. Hence, it is said to be supervised learning. 
+                    <br><br>
+                    A dictionary is created to reference colors for the 3 classes. The reason why 0, 1 and 2 are used is that they represent the 3 classes, namely; Setosa, Versicolor and Virginica. Next, an array of colors is created so that the 3 classes are plotted in different colors.
+                    <br><br>
+                    The scatterplots are plotted in their respective axes and shown. My task was to mordify the subplots to make them look like the graphs in the 1st picture.
+                </p>
+            </div>
+        </section>
+        
+        <!--Script tag for Swiper, makes the images swipe-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+        <!--This also makes the images swipe-->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // I chose not to include images automatically swiping,
+            // in case the user is still reading the text in the images
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Makes the dots clickable
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>
